@@ -1,0 +1,159 @@
+{
+	"info": {
+		"_postman_id": "2e14a7ad-0dae-4f96-bde5-02bae3d07684",
+		"name": "Cliente Feliz – API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "47139809",
+		"_collection_link": "https://gabo0609-2543279.postman.co/workspace/Gabriel's-Workspace~bb28c046-ba84-43b7-83a4-5c170c3d0df7/collection/47139809-2e14a7ad-0dae-4f96-bde5-02bae3d07684?action=share&source=collection_link&creator=47139809"
+	},
+	"item": [
+		{
+			"name": "Listar ofertas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/CLIENTE-FELIZ-EJERCICIO/public/index.php?endpoint=ofertas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"CLIENTE-FELIZ-EJERCICIO",
+						"public",
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "endpoint",
+							"value": "ofertas"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear una nueva oferta",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"titulo\": \"Backend Developer\",\r\n  \"descripcion\": \"Se busca programador backend con experiencia en Node.js\",\r\n  \"empresa\": \"Innovatech\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/CLIENTE-FELIZ-EJERCICIO/public/index.php?endpoint=ofertas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"CLIENTE-FELIZ-EJERCICIO",
+						"public",
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "endpoint",
+							"value": "ofertas"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar oferta",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 1,\r\n  \"titulo\": \"Desarrollador PHP Senior\",\r\n  \"descripcion\": \"Experto en APIs, frameworks y arquitectura limpia\",\r\n  \"empresa\": \"TechCorp\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/CLIENTE-FELIZ-EJERCICIO/public/index.php?endpoint=ofertas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"CLIENTE-FELIZ-EJERCICIO",
+						"public",
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "endpoint",
+							"value": "ofertas"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar oferta",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost/CLIENTE-FELIZ-EJERCICIO/public/index.php?endpoint=ofertas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"CLIENTE-FELIZ-EJERCICIO",
+						"public",
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "endpoint",
+							"value": "ofertas"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
